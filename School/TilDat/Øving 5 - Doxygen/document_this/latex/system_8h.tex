@@ -1,0 +1,36 @@
+\hypertarget{system_8h}{}\doxysection{source/system.h File Reference}
+\label{system_8h}\index{source/system.h@{source/system.h}}
+
+
+So how much are we gonna go in depth of how things work?  
+
+
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structSystem}{System}}
+\begin{DoxyCompactList}\small\item\em A structure to represent a system and desired PID tuning method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{system_8h_aed7f5186d416224e26c97bc9978aac47}\label{system_8h_aed7f5186d416224e26c97bc9978aac47}} 
+enum {\bfseries Tuning} \{ {\bfseries Classic\+\_\+\+Ziegler\+\_\+\+Nichols}
+, {\bfseries Pessen\+\_\+\+Integral\+\_\+\+Rule}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{system_8h_a89d285f35ca686ba869daaaf54ba7744}\label{system_8h_a89d285f35ca686ba869daaaf54ba7744}} 
+\mbox{\hyperlink{structSystem}{System}} $\ast$ \mbox{\hyperlink{system_8h_a89d285f35ca686ba869daaaf54ba7744}{system\+\_\+create}} (double Ku, double Tu, Tuning tuning\+\_\+method)
+\begin{DoxyCompactList}\small\item\em This function creates a new system object on the heap param\mbox{[}in\mbox{]} Ku Create Ku param\mbox{[}in\mbox{]} Tu Create Tu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{system_8h_adab9a110141ccce185af981adbc62515}\label{system_8h_adab9a110141ccce185af981adbc62515}} 
+void {\bfseries system\+\_\+delete} (\mbox{\hyperlink{structSystem}{System}} $\ast$system\+\_\+current)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+So how much are we gonna go in depth of how things work? 
+

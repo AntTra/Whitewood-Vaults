@@ -1,0 +1,23 @@
+
+Hovedpunkter:
+*Motivasjon 
+*Begreper fra kretsteknikken
+*Thevenin-ekvivalenter
+*Analoge signaler - sentrale begreper
+*Signalmodellen
+
+
+Motivasjon
+Målesignaler må overføres fra der de oppstår til der de trengs. 
+Gir en idé om hvordan det er i virkeligheeten
+
+Begreper fra kretsteknikken
+Diamant med +- er spenningskilde betyr en funksjon av noe annet. Spenningskilde
+
+
+Strømkilde produserer en elektrisk strøm ()
+
+Repeter impedans, serie og parallellkobling, ohms lov
+
+Thenevenin-ekvivalenten
+En lineør krets(åpen) som har en spenningskilde og en impedans/resistans. Dette er da kretsens thevenin-ekvivalent. 

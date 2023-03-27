@@ -1,0 +1,10 @@
+Oppgave 1 - 1F, 2E, 3D, 4C, 5B, 6A
+
+Oppgave 2 - 
+Potensiometer er en variabel motstand. Kan brukes til å variere skjermstyrke til en lcd
+Integrerte kretser er basically bare en liten CPU
+Brytere avbryter en lukket krets 
+Lysdioder blir brukt for lys eller for å fjerne spenning (1-3V)
+Transistorer kan avbryte signaler. Kan brukes for RGB lysdioder
+ 
+osv osv.

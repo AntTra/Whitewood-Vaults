@@ -1,0 +1,12 @@
+{
+    "tdt4102.isProjectFolder": true,
+    "cmake.configureOnOpen": false,
+    "cmake.autoSelectActiveFolder": false,
+    "cmake.configureOnEdit": false,
+    "makefile.alwaysPreConfigure": false,
+    "files.associations": {
+        "ostream": "cpp",
+        "string_view": "cpp",
+        "regex": "cpp"
+    }
+}

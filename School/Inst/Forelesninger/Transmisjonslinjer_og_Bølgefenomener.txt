@@ -1,0 +1,33 @@
+Transmisjonslinjer og bølgefenomener
+
+Ord som kan vøre nyttig å søke opp:
+  * Karakteristisk impedans (ehhh ikke så viktig å lese mer om)
+    * Forhold mellom spenning og strøm på linja
+  *
+
+Kort repetisjon:
+  Basic bølgeteori
+  In general hva transmisjonslinje er og hvordan det ser ut 
+  Refleksjonskoeffisienten
+|
+----> Hva representerer refleksjonskoefffisienten?
+
+      Den forteller om hvor stor andel som reflekteres
+
+      0 < gamma < 1. Beskrevet som prosent
+
+      Negativ verdi dersom belastningsimpedansen blir mindre enn Z_0 og positiv dersom ---||---
+
+      -------------------- Spesialtilfeller -----------------------------------
+
+      Åpen linje ved gamma mot 1 positiv (totalrefleksjon) Z_b ->
+
+      Kortsluttet linje ved Gamme mot -1 (negativ totalrefleksjon) Z_b ->
+
+      Korrekt terminering ved gamma mot 0 (ingen refleskjon) altså Z_b mot Z_0
+
+    ---------------------------------------------------------------------------
+
+
+
+

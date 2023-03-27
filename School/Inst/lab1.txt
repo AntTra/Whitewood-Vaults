@@ -1,0 +1,12 @@
+Oppgave 1 - Gjort
+
+Oppgave 2 a) Gjort
+          b) Maks neg: -10.35V          Maks pos: 9.4V
+          c) Maks neg: -144 mV      Maks pos: 54 mV
+
+Oppgave 3 a) Gjort
+          b) Gjort
+          c) Ikke like respons rammenliknet med oppgave 2c ettersom instrumenteringsforsterkeren skaper høy inngangsimpedans på den første delen av instrumenteringsforsterkeren i studentkortet. Dette begrunner den lavere motorhastigheten
+//Maks 11.2V, Min -9.3V
+
+Oppgave 4 a)

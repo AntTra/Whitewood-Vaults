@@ -1,0 +1,25 @@
+double - basically float
+float - basically double
+cout - basically print bare bedre og faen meg bedre
+int - start return function
+char - waaaaaaow
+void - basically int bare med null return. basically lettere shit
+
+int main() {
+	string line;
+	cin >> line; //leser ting som blir skrevet inn. Leser ett ord av gangen. 	Test dette i debuggeren	
+
+}	
+
+Grafikk
+#include "AnimationWindow.h"
+
+int main() {
+	AnimationWindow window;
+
+	window.draw_circle({100, 100}, 50);		//tar inn en del av skjermen der den tegner inn en sirkel
+							//RECTANGLE CIRCLE QUAD TEXT 
+	window.wait:for:close(); 			//venter til vinduet lukker
+	return 0;
+}
+

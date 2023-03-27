@@ -1,0 +1,92 @@
+\hypertarget{calculations_8h}{}\doxysection{source/calculations.h File Reference}
+\label{calculations_8h}\index{source/calculations.h@{source/calculations.h}}
+
+
+Woah. This thing defines some calculations of the parameters of P I D using Classic-\/\+Ziegler-\/\+Nichols\char`\"{},\char`\"{}Pessens Integral Rule"{}.  
+
+
+{\ttfamily \#include \char`\"{}system.\+h\char`\"{}}\newline
+Include dependency graph for calculations.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{calculations_8h_a65260419923f28d94cb9893c780a5af3}{calculate\+\_\+\+P\+\_\+parameter}} (\mbox{\hyperlink{structSystem}{System}} $\ast$current\+\_\+system)
+\begin{DoxyCompactList}\small\item\em Hello. This function calculates the proportional parameters of the current system. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{calculations_8h_ad587231ab5fd7e00c09645eac6cffd60}{calculate\+\_\+\+I\+\_\+parameter}} (\mbox{\hyperlink{structSystem}{System}} $\ast$current\+\_\+system)
+\begin{DoxyCompactList}\small\item\em This function calculates the integer parameters of the current system. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{calculations_8h_a8f20770a71d65ff426630b2e09496a4c}{calculate\+\_\+\+D\+\_\+parameter}} (\mbox{\hyperlink{structSystem}{System}} $\ast$current\+\_\+system)
+\begin{DoxyCompactList}\small\item\em This function calculates the derivative parameters of the current system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Woah. This thing defines some calculations of the parameters of P I D using Classic-\/\+Ziegler-\/\+Nichols\char`\"{},\char`\"{}Pessens Integral Rule"{}. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{calculations_8h_a8f20770a71d65ff426630b2e09496a4c}\label{calculations_8h_a8f20770a71d65ff426630b2e09496a4c}} 
+\index{calculations.h@{calculations.h}!calculate\_D\_parameter@{calculate\_D\_parameter}}
+\index{calculate\_D\_parameter@{calculate\_D\_parameter}!calculations.h@{calculations.h}}
+\doxysubsubsection{\texorpdfstring{calculate\_D\_parameter()}{calculate\_D\_parameter()}}
+{\footnotesize\ttfamily double calculate\+\_\+\+D\+\_\+parameter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSystem}{System}} $\ast$}]{current\+\_\+system }\end{DoxyParamCaption})}
+
+
+
+This function calculates the derivative parameters of the current system. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{structSystem}{System}}} & \\
+\hline
+\mbox{\texttt{ out}}  & {\em current\+\_\+system} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 34 of file calculations.\+c.
+
+\mbox{\Hypertarget{calculations_8h_ad587231ab5fd7e00c09645eac6cffd60}\label{calculations_8h_ad587231ab5fd7e00c09645eac6cffd60}} 
+\index{calculations.h@{calculations.h}!calculate\_I\_parameter@{calculate\_I\_parameter}}
+\index{calculate\_I\_parameter@{calculate\_I\_parameter}!calculations.h@{calculations.h}}
+\doxysubsubsection{\texorpdfstring{calculate\_I\_parameter()}{calculate\_I\_parameter()}}
+{\footnotesize\ttfamily double calculate\+\_\+\+I\+\_\+parameter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSystem}{System}} $\ast$}]{current\+\_\+system }\end{DoxyParamCaption})}
+
+
+
+This function calculates the integer parameters of the current system. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{structSystem}{System}}} & \\
+\hline
+\mbox{\texttt{ out}}  & {\em current\+\_\+system} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 22 of file calculations.\+c.
+
+\mbox{\Hypertarget{calculations_8h_a65260419923f28d94cb9893c780a5af3}\label{calculations_8h_a65260419923f28d94cb9893c780a5af3}} 
+\index{calculations.h@{calculations.h}!calculate\_P\_parameter@{calculate\_P\_parameter}}
+\index{calculate\_P\_parameter@{calculate\_P\_parameter}!calculations.h@{calculations.h}}
+\doxysubsubsection{\texorpdfstring{calculate\_P\_parameter()}{calculate\_P\_parameter()}}
+{\footnotesize\ttfamily double calculate\+\_\+\+P\+\_\+parameter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSystem}{System}} $\ast$}]{current\+\_\+system }\end{DoxyParamCaption})}
+
+
+
+Hello. This function calculates the proportional parameters of the current system. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{structSystem}{System}}} & \\
+\hline
+\mbox{\texttt{ out}}  & {\em current\+\_\+system} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 10 of file calculations.\+c.
+
