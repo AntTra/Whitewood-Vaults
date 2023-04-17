@@ -1,0 +1,4 @@
+Hvilke pinner på nRF52833-en brukes? Vil pinnene være høye eller lave
+dersom knappene trykkes?
+  Pin 13 og pin 14. Når knappene trykkes, blir det satt til lavt, mens når de ikke trykkes er de høyt
+
