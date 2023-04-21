@@ -1,5 +1,5 @@
 FAMILY := nrf52
-SOURCES := main.c uart.c gpio.c
+SOURCES := main.c
 
 BUILD_DIR := .build_system
 LINKER_SCRIPT := $(BUILD_DIR)/linker_script.ld
@@ -18,7 +18,7 @@ CFLAGS += -mcpu=cortex-m4 -mthumb -mabi=aapcs -mfloat-abi=soft
 CFLAGS += -ffunction-sections -fdata-sections --short-enums
 CFLAGS += -fno-strict-aliasing -fno-builtin
 # Good pracice
-CFLAGS += -Wall -std=gnu99
+CFLAGS += -Wall -Werror -std=gnu99
 # CFLAGS += -ggdb -Og / -O0 / -O3 etc
 # Chip specific
 CFLAGS += -DNRF52833_XXAA
