@@ -29,13 +29,15 @@ typedef struct {
   volatile uint32_t DIRCLR;
   volatile uint32_t LATCH;
   volatile uint32_t DETECTMODE;
-  volatile uint32_t RESERVED1_1[128];
+  volatile uint32_t RESERVED1_1[118]; // 128
   volatile uint32_t PIN_CNF[10];
 } NRF_GPIO_REGS1;
 
 int ubit_button_press_a() { return (!(GPIO0->IN & (1 << 14))); }
 
-int ubit_button_press_b() { return (!(GPIO1->IN & (1 << 14))); }
+int ubit_button_press_b() {
+  return (!(GPIO0->IN & (1 << 23)));
+} // GPI01->IN & (1 << 23)
 
 int main() {
 
@@ -65,34 +67,28 @@ int main() {
      * turn on LED matrix if it is. */
 
     if (ubit_button_press_b()) {
-      GPIO0->PIN_CNF[21] = 1; // Row 1
-      GPIO0->PIN_CNF[22] = 1; // Row 2
-      GPIO0->PIN_CNF[15] = 1; // Row 3
-      GPIO0->PIN_CNF[24] = 1; // Row 4
-      GPIO0->PIN_CNF[19] = 1; // Row 5
+      GPIO0->OUTCLR = (1 << 28); // Row 1
+      GPIO0->OUTCLR = (1 << 11); // Row 2
+      GPIO0->OUTCLR = (1 << 31); // Row 3
+      GPIO1->OUTCLR = (1 << 5);  // Row 4
+      GPIO0->OUTCLR = (1 << 30); // Row 5
 
-      GPIO0->PIN_CNF[28] = 0; // Col 1
-      GPIO0->PIN_CNF[11] = 0; // Col 2
-      GPIO0->PIN_CNF[31] = 0; // Col 3
-      GPIO1->PIN_CNF[5] = 0;  // Col 4
-      GPIO0->PIN_CNF[30] = 0; // Col 5
+      GPIO0->OUTSET = (1 << 21); // Col 1
+      GPIO0->OUTSET = (1 << 22); // Col 2
+      GPIO0->OUTSET = (1 << 15); // Col 3
+      GPIO0->OUTSET = (1 << 24); // Col 4
+      GPIO0->OUTSET = (1 << 19); // Col 5
     };
 
     /* Check if button A is pressed;
      * turn off LED matrix if it is. */
 
     if (ubit_button_press_a()) {
-      GPIO0->PIN_CNF[21] = 0; // Row 1
-      GPIO0->PIN_CNF[22] = 0; // Row 2
-      GPIO0->PIN_CNF[15] = 0; // Row 3
-      GPIO0->PIN_CNF[24] = 0; // Row 4
-      GPIO0->PIN_CNF[19] = 0; // Row 5
-
-      GPIO0->PIN_CNF[28] = 1; // Col 1
-      GPIO0->PIN_CNF[11] = 1; // Col 2
-      GPIO0->PIN_CNF[31] = 1; // Col 3
-      GPIO1->PIN_CNF[5] = 1;  // Col 4
-      GPIO0->PIN_CNF[30] = 1; // Col 5
+      GPIO0->OUTSET = (1 << 11); // Row 1
+      GPIO0->OUTSET = (1 << 28); // Row 2
+      GPIO0->OUTSET = (1 << 31); // Row 3
+      GPIO0->OUTSET = (1 << 5);  // Row 4
+      GPIO0->OUTSET = (1 << 30); // Row 5
     };
 
     sleep = 10000;
