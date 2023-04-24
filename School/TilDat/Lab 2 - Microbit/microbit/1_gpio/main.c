@@ -29,7 +29,7 @@ typedef struct {
   volatile uint32_t DIRCLR;
   volatile uint32_t LATCH;
   volatile uint32_t DETECTMODE;
-  volatile uint32_t RESERVED1_1[118]; // 128
+  volatile uint32_t RESERVED1_1[118];
   volatile uint32_t PIN_CNF[10];
 } NRF_GPIO_REGS1;
 
