@@ -87,7 +87,7 @@ int main() {
       GPIO0->OUTSET = (1 << 11); // Row 1
       GPIO0->OUTSET = (1 << 28); // Row 2
       GPIO0->OUTSET = (1 << 31); // Row 3
-      GPIO0->OUTSET = (1 << 5);  // Row 4
+      GPIO1->OUTSET = (1 << 5);  // Row 4
       GPIO0->OUTSET = (1 << 30); // Row 5
     };
 
