@@ -1,1 +1,0 @@
-/home/student/Documents/Gruppe MNM/Lab 2 - Microbit/microbit/2_uart/.build_system/main.hex
