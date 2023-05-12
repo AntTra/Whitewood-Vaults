@@ -2,6 +2,7 @@
 #include "uart.h"
 #include <stdint.h>
 #include <stdio.h>
+#include ".build_system/nrf.h"
 
 ssize_t _write(int fd, const void *buf, size_t count) {
   char *letter = (char *)(buf);
@@ -26,7 +27,7 @@ int main() {
       uart_send('A');
       gpio_lights_on();
     }
-    if (!GPIO0->IN & (1 << 23)) { // Hvis knapp B trykkes, send B
+    if (!(GPIO0->IN & (1 << 23))) { // Hvis knapp B trykkes, send B
       uart_send('B');
       gpio_lights_off();
     }

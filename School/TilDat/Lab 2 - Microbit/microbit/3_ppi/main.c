@@ -4,6 +4,16 @@
 
 int main() {
 
+  GPIO0->PIN_CNF[14] = 0; // button A
+  GPIO0->PIN_CNF[23] = 0; // button B
+
+  // Configure leds
+  GPIO0->PIN_CNF[21] = 1; // Row 1
+  GPIO0->PIN_CNF[22] = 1; // Row 2
+  GPIO0->PIN_CNF[15] = 1; // Row 3
+  GPIO0->PIN_CNF[24] = 1; // Row 4
+  GPIO0->PIN_CNF[19] = 1; // Row 5
+
   GPIO0->PIN_CNF[28] = 1; // Col 1
   GPIO0->PIN_CNF[11] = 1; // Col 2
   GPIO0->PIN_CNF[31] = 1; // Col 3
